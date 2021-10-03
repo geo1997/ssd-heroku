@@ -12,7 +12,7 @@ module.exports = function (passport) {
     passport.use(new GoogleAuth20({
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: '/auth/google/callback'
+            callbackURL: 'https://poems-ssd-oauth.herokuapp.com/auth/google/callback'
         },
         async (accessToken, refreshToken,otherTokenDetails, profile, done) => {
             let tokens = {
