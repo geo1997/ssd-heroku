@@ -1,0 +1,67 @@
+.login-container{
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p{
+    margin: 10px 0 !important;
+}
+
+.fa-small{
+    font-size: 16px !important;
+}
+
+.btn-float{
+    float: left;
+    margin-right: 10px;
+}
+.img-small{
+    width:180px ;
+}
+.textArea{
+    outline: none;
+    border-radius: 4px;
+    height: 175px;
+}
+.textArea:focus {
+    transition: 0.3s;
+    outline: none;
+    border: 2px solid #26a69a;
+    box-shadow: 1px 10px 17px 0px #26a69a47;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+input[type=file]::file-selector-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3c8ac1;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #609cc6;
+  }
+
+  
