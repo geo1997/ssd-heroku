@@ -5,7 +5,7 @@ const {google} = require("googleapis");
 const router = express.Router()
 const {ensureAuth} = require('../middleware/auth')
 const config = require('../credentials.json')
-const token = require('../tokens.json')
+
 
 
 let dir = "./files"
@@ -37,7 +37,7 @@ router.post("/upload/drive", ensureAuth, (req, res) => {
 
     try {
         //get tokens to details to object
-        const tokens = JSON.parse(fs.readFileSync(token, 'utf8'));
+        const tokens = JSON.parse(fs.readFileSync('../tokens.json', 'utf8'));
         //make OAuth2 object
         const oAuth2Client = new google.auth.OAuth2(config.web.client_id,
             config.web.client_secret,
